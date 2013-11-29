@@ -1,6 +1,6 @@
     $(function(){ 
 
-      //GEneral settings
+      //GENERAL SETTINGS
       $("#search-form").submit(function(){ return false;})
 
 
@@ -17,7 +17,6 @@
       canvas = document.getElementById("googleMap");
       map = new google.maps.Map(canvas, mapOptions);
       
-
     
       // GEOLOCATION API
       function updateLocation(position){
@@ -48,7 +47,6 @@
         }
       })
       
-
 
       //AUTOCOMPLETE
       var infowindow = new google.maps.InfoWindow();
@@ -95,9 +93,7 @@
       });
 
 
-
-
-      // Directions
+      // DIRECTIONS
       $("#directions_form").on("submit", function(){
         from = $("#directions_from").val()
         to = $("#directions_to").val()
